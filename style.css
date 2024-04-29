@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 *{
     margin: 0;
@@ -16,16 +17,15 @@ body{
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 nav{
-    background-color: #8db0af3b;
     height: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 0;
     z-index: 1000;
     font-size: 1.2rem;
 }
@@ -33,7 +33,13 @@ nav{
     color:#313e4a;
     text-decoration: none;
 }
+.navbar h2:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
 .navbar{
+    position: fixed;
+    top: 0;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -41,15 +47,21 @@ nav{
 }
 .navbar ul{
     display: flex;
+    background-color: #7998976e;
+    border-radius: 20px;
 }
 .navbar li{
     list-style: none;
     margin: 0 1.5rem;
 }
+.navbar li:hover{
+    transform: scale(1.1);
+    font-weight: 600;
+}
 .navbar button{
     padding: 0.5rem;
     border-radius: 1rem;
-    background: #384854;
+    background: #44576678;
     color: aliceblue;
     border: 2px solid black;
     outline: none;
@@ -58,13 +70,41 @@ nav{
     justify-content: space-evenly;
     cursor: pointer;
 }
+.navbar button:hover{
+    transition: all 0.5s ease-in;
+    background-color: #445766;
+}
+
+.mainbg .maincircle{
+    background-color: #387170c8;
+    clip-path: circle(50% at 50% 50%);
+    z-index: -1;
+}
+.mainbg .maincircle:first-child{
+    position: absolute;
+    opacity: 0.1;
+    height: 20rem;
+    width: 20rem;
+    top: -5rem;
+    left: -1rem;
+}
+.mainbg .maincircle:last-child{
+    opacity: 0.05;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: 25rem;
+    left: 16rem;
+}
 
 .home{
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
+
 .hleft{
     width: 40%;
     display: flex;
@@ -92,11 +132,35 @@ nav{
     font-size: 1.2rem;
     padding: 0.5rem 1rem; 
     border-radius: 10px;
-    background: #79979a;
+    background: #44576678;
     color: aliceblue;
     border: 2px solid black;
     outline: none;
     cursor: pointer;
+}
+.hleft button:hover{
+    transition: all 0.5s ease-in;
+    background-color: #4f6474;
+}
+
+.hleft .hicons{
+    position: relative;
+    top: 4rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.hleft .hicons i{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    filter:opacity(0.2);
+    font-size: 1.5rem;
+}
+.hleft .hicons i:hover{
+    filter:drop-shadow(2px 4px 6px rgb(255, 255, 255)) opacity(1);
+    transform: scale(1.2);
+    color: #2f5a59;
+    transition: all 0.1s ease-in;
 }
 
 .hright{
@@ -117,4 +181,40 @@ nav{
     z-index: 10;
     object-fit: cover;
     filter: drop-shadow(2px 4px 6px #202f2f) contrast(0.85);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.338);
+}
+.hright .hrname{
+    position: absolute;
+    height: 100%;
+    transform: rotate(90deg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    left: 9rem;
+    opacity: 0.05;
+    filter: drop-shadow(2px 4px 6px #202f2f);
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.aleft{
+    width: 50%;
+    height: 100%;
+    background-color: #6985844a;
+    clip-path: polygon(0 0, 98% 0%, 82% 100%, 0% 100%);
+}
+.aright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
