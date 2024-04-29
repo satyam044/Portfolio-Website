@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(to right,#8db0af,#668180);
+    color: aliceblue;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav{
+    background-color: #8db0af3b;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    font-size: 1.2rem;
+}
+.navbar a{
+    color:#313e4a;
+    text-decoration: none;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 1.5rem;
+}
+.navbar button{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: #384854;
+    color: aliceblue;
+    border: 2px solid black;
+    outline: none;
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hleft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 3rem;
+}
+.hleft p{
+    color: #516274;
+    font-size: 2vw;
+    font-weight: 100;
+}
+.hleft h1{
+    font-size: 5vw;
+    color: #445766;
+}
+.hleft h5{
+    color: #516274;
+    margin-bottom: 2rem;
+    font-size: 3vw;
+    font-weight: 100;
+}
+.hleft button{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem; 
+    border-radius: 10px;
+    background: #79979a;
+    color: aliceblue;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+.hright{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.hright .hbg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #6985844a;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.hright img{
+    position: relative;
+    z-index: 10;
+    object-fit: cover;
+    filter: drop-shadow(2px 4px 6px #202f2f) contrast(0.85);
+}
