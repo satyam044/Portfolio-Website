@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     height: 100%;
     width: 100vw;
-    background: linear-gradient(to right,#8db0af,#668180);
+    background: linear-gradient(to right, #8db0af, #668180);
     color: aliceblue;
     font-family: "Baloo 2", sans-serif;
     font-optical-sizing: auto;
@@ -19,18 +21,20 @@ body{
     font-style: normal;
     overflow-x: hidden;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     width: 10px;
     background-color: #202f2f;
 }
-body::-webkit-scrollbar-thumb{
-    background-color:#2f5a59;
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2f5a59;
     border-radius: 20px;
     cursor: pointer;
 }
 
 
-nav{
+nav {
     height: 3rem;
     width: 100%;
     display: flex;
@@ -39,16 +43,19 @@ nav{
     z-index: 1000;
     font-size: 1.2rem;
 }
-.navbar a{
-    color:#313e4a;
+
+.navbar a {
+    color: #313e4a;
     text-decoration: none;
 }
-.navbar h2:hover{
+
+.navbar h2:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(1.1);
     color: #fff;
 }
-.navbar{
+
+.navbar {
     position: fixed;
     top: 0;
     width: 90%;
@@ -56,29 +63,33 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     background-color: #7998976e;
     border-radius: 20px;
 }
-.navbar li{
+
+.navbar li {
     list-style: none;
     margin: 0 1.5rem;
     color: #fff;
 }
-.navbar li:hover{
+
+.navbar li:hover {
     transition: color 0.3s ease-in;
     transform: scale(1.1);
     text-decoration: underline;
     font-weight: 600;
     color: #000;
 }
-.navbar button{
+
+.navbar button {
     padding: 0.5rem;
     border-radius: 1rem;
     background: #44576678;
     color: #8db5b5;
-    border: 2px solid black;
+    border: 2px solid black solid black;
     outline: none;
     width: 10vw;
     display: flex;
@@ -86,21 +97,24 @@ nav{
     cursor: pointer;
     align-items: center;
 }
-.navbar button i{
+
+.navbar button i {
     font-size: 1.2rem;
 }
-.navbar button:hover{
+
+.navbar button:hover {
     transition: all 0.5s ease-in;
     color: #fff;
     background-color: #445766;
 }
 
-.mainbg .maincircle{
+.mainbg .maincircle {
     background-color: #387170c8;
     clip-path: circle(50% at 50% 50%);
     z-index: -1;
 }
-.mainbg .maincircle:nth-child(1){
+
+.mainbg .maincircle:nth-child(1) {
     position: absolute;
     opacity: 0.1;
     height: 20rem;
@@ -108,7 +122,8 @@ nav{
     top: -5rem;
     left: -1rem;
 }
-.mainbg .maincircle:nth-child(2){
+
+.mainbg .maincircle:nth-child(2) {
     opacity: 0.05;
     position: absolute;
     height: 20rem;
@@ -116,7 +131,8 @@ nav{
     top: 25rem;
     left: 16rem;
 }
-.mainbg .maincircle:nth-child(3){
+
+.mainbg .maincircle:nth-child(3) {
     height: 20rem;
     width: 20rem;
     position: absolute;
@@ -126,7 +142,7 @@ nav{
 }
 
 
-.home{
+.home {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -134,7 +150,7 @@ nav{
     overflow: hidden;
 }
 
-.hleft{
+.hleft {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -142,78 +158,88 @@ nav{
     align-items: flex-start;
     line-height: 3rem;
 }
-.hleft p{
+
+.hleft p {
     color: #516274;
     font-size: 2vw;
     font-weight: 100;
 }
-.hleft h1{
+
+.hleft h1 {
     font-size: 5vw;
     color: #445766;
 }
-.hleft h5{
+
+.hleft h5 {
     color: #516274;
     margin-bottom: 2rem;
     font-size: 3vw;
     font-weight: 100;
 }
-.hleft button{
+
+.hleft button {
     font-size: 1.2rem;
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
     border-radius: 10px;
     background: #44576678;
     color: aliceblue;
-    border: 2px solid black;
+    border: 2px solid black solid black;
     outline: none;
     cursor: pointer;
 }
-.hleft button:hover{
+
+.hleft button:hover {
     transition: all 0.5s ease-in;
     background-color: #4f6474;
-    box-shadow: -2px 0px 20px 0px #424950;
+    box-shadow: -2px solid black 0px 20px 0px #424950;
 }
 
-.hleft .hicons{
+.hleft .hicons {
     position: relative;
     top: 4rem;
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-.hleft .hicons i{
+
+.hleft .hicons i {
     cursor: pointer;
     color: rgb(0, 0, 0);
-    filter:opacity(0.2);
+    filter: opacity(0.2);
     font-size: 1.5rem;
 }
-.hleft .hicons i:hover{
-    filter:drop-shadow(2px 4px 6px rgb(255, 255, 255)) opacity(1);
+
+.hleft .hicons i:hover {
+    filter: drop-shadow(2px solid black 4px 6px rgb(255, 255, 255)) opacity(1);
     transform: scale(1.2);
     color: #2f5a59;
     transition: all 0.1s ease-in;
 }
 
-.hright{
+.hright {
     position: relative;
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
-.hright .hbg{
+
+.hright .hbg {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #6985844a;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
-.hright img{
+
+.hright img {
     position: relative;
     z-index: 10;
     object-fit: cover;
-    filter: drop-shadow(2px 4px 6px #202f2f) contrast(0.85);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.338);
+    filter: drop-shadow(2px solid black 4px 6px #202f2f) contrast(0.85);
+    border-bottom: 2px solid black solid rgba(0, 0, 0, 0.338);
 }
-.hright .hrname{
+
+.hright .hrname {
     position: absolute;
     height: 100%;
     transform: rotate(90deg);
@@ -223,53 +249,160 @@ nav{
     font-size: 6rem;
     left: 9rem;
     opacity: 0.05;
-    filter: drop-shadow(2px 4px 6px #202f2f);
+    filter: drop-shadow(2px solid black 4px 6px #202f2f);
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.about{
+.about {
     margin: 1rem 0;
     height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.aleft{
+
+.aleft {
     width: 50%;
     height: 100%;
     background-color: #6985844a;
     clip-path: polygon(0 0, 98% 0%, 82% 100%, 0% 100%);
 }
-.aright{
+
+.aright {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 4rem ;
+    padding: 0 4rem;
 }
-.aright h2 i{
+
+.aright h2 i {
     margin: 0.5rem;
 }
 
-.skills{
-    height: 60vh;
+.skills {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #7998976e;
 }
-.skills h2{
-    margin: 2rem 4rem;
+
+.skills h2 {
+    margin: 2rem 0 0 6rem;
 }
-.skills h2 i{
+
+.skills h2 i {
     margin-left: 0.5rem;
 }
 
+.sskills {
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #424950;
+}
 
-.projects{
+.sskills .skillsleft {
+    width: 75%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.sskills .skillsleft .sbar {
+    width: 45%;
+    background-color: #2f5a59;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.sskills .skillsleft .sbar p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.sbar i {
+    font-size: 1.5rem;
+}
+
+.sbar .html {
+    color: #e44f26;
+}
+
+.sbar .css {
+    color: #1572b6;
+}
+
+.sbar .js {
+    color: yellow;
+}
+
+.sbar .bs {
+    color: #6f2cf5;
+}
+
+.sbar .tailwind {
+    width: 2rem;
+}
+
+.sbar .figma {
+    color: #f34e1e;
+}
+
+.sskills .skillsright{
+    width: 20%;
+    padding: 1rem;
+    background-color: #2f5a59;
+    border-left: 2px solid black;
+}
+.sskills .skillsright .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, #424950 95%, transparent 80% 100%),
+        conic-gradient(#2196f3 75%, rgb(255, 255, 255) 0);
+}
+.sskills .skillsright .progress-bar2{
+    background:
+    radial-gradient(closest-side, #424950 95%, transparent 80% 100%),
+    conic-gradient(#2196f3 80%, rgb(255, 255, 255) 0);
+}
+
+.progress-bar::before {
+    content: "75%";
+}
+.progress-bar2::before{
+    content: "80%";
+}
+
+.skills .skillsright .srightdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills .skillsright .srightdiv p{
+    margin-top: 1rem;
+}
+
+
+.projects {
     height: 70vh;
     width: 100%;
     background-color: #2f5a59;
@@ -277,28 +410,34 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-.projects h2{
+
+.projects h2 {
     margin: 2rem 0;
 }
-.projects h2 i{
+
+.projects h2 i {
     margin-left: 0.5rem;
 }
-.projects .pcardscollection{
+
+.projects .pcardscollection {
     width: 100%;
     height: 80%;
     display: flex;
     justify-content: space-around;
 }
-.projects .pcards{
+
+.projects .pcards {
     height: 90%;
     width: 20vw;
     background-color: #668180;
 }
-.projects .pcards .pbg{
+
+.projects .pcards .pbg {
     background-color: #202f2f;
     height: 80%;
 }
-.projects .pcards p{
+
+.projects .pcards p {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -307,18 +446,19 @@ nav{
 }
 
 
-.contact{
+.contact {
     height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contact h2{
+
+.contact h2 {
     margin: 2rem 0;
 }
 
-footer{
+footer {
     width: 100%;
     padding: 0.5rem 0;
     background-color: #202f2f;
