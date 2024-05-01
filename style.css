@@ -57,7 +57,7 @@ nav {
 
 .navbar {
     position: fixed;
-    top: 0;
+    top: 10px;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -84,6 +84,36 @@ nav {
     color: #000;
 }
 
+.navbtn{
+    display: flex;
+    align-items: center;
+}
+.navbtn #hamburger{
+    display: none;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.hamelems{
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    top: -60vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: #202f2f;
+    transition: all 0.5s ease-in;
+}
+.hamelems a{
+    color: #fff;
+    text-decoration: none;
+}
+.hamelems li{
+    list-style: none;
+}
+
 .navbar button {
     padding: 0.5rem;
     border-radius: 1rem;
@@ -91,8 +121,8 @@ nav {
     color: #8db5b5;
     border: 2px solid black;
     outline: none;
-    width: 10vw;
     display: flex;
+    gap: 0.5rem;
     justify-content: space-evenly;
     cursor: pointer;
     align-items: center;
@@ -132,18 +162,7 @@ nav {
     left: 16rem;
 }
 
-.mainbg .maincircle:nth-child(3) {
-    height: 20rem;
-    width: 20rem;
-    position: absolute;
-    opacity: 0.15;
-    top: 50rem;
-    left: 62rem;
-}
-
-
 .home {
-    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -170,14 +189,9 @@ nav {
     color: #445766;
 }
 
-.hleft h5{
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: #516274;
-}
 .hleft span {
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2vw;
     font-weight: 900;
 }
@@ -222,6 +236,7 @@ nav {
 
 .hright {
     position: relative;
+    height: 100vh;
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -251,7 +266,7 @@ nav {
     display: flex;
     justify-content: center;
     font-size: 6rem;
-    left: 9rem;
+    left: 20%;
     opacity: 0.05;
     filter: drop-shadow(2px 4px 6px #202f2f);
     font-family: "Bungee", sans-serif;
@@ -313,21 +328,20 @@ nav {
     padding: 2rem;
     height: 100%;
     display: flex;
+    justify-content:center ;
     align-items: center;
     background-color: #424950;
 }
 
 .sskills .skillsleft {
-    width: 60%;
-    padding: 0 5rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 2rem;
 }
 
 .sskills .skillsleft .sbar {
-    width: 45%;
+    width: 35%;
+    margin-right: 0.5rem;
     background-color: #2f5a59;
     padding: 1rem;
     border-radius: 10px;
@@ -384,7 +398,7 @@ nav {
 }
 
 .sskills .skillsright{
-    width: 20%;
+    width: 15rem;
     padding: 1rem;
     background-color: #2f5a59;
     border-left: 2px solid black;
@@ -498,34 +512,33 @@ nav {
     margin-top: 2rem;
 }
 
-.contact form{
-    width: 25vw;
+.contact .cform{
     display: flex;
     flex-direction: column;
 }
-.contact form span{
+.contact .cform span{
     margin-top: 1rem;
 }
-.contact form input,
-.contact form textarea{
+.contact .cform input,
+.contact .cform textarea{
     border: 2px solid black;
     outline: none;
     padding: 0.5rem;
     border-radius: 4px;
 }
-.contact form input::placeholder,
-.contact form textarea::placeholder{
+.contact .cform input::placeholder,
+.contact .cform textarea::placeholder{
     color: #000000b6;
 }
 
-.contact form textarea::-webkit-resizer{
+.contact .cform textarea::-webkit-resizer{
     display: none;
 }
 
-.contact form #name{
+.contact .cform #name{
     text-transform: capitalize;
 }
-.contact form button{
+.contact .cform button{
     padding: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
@@ -544,4 +557,111 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbtn #hamburger{
+        display: block;
+    }
+    .hleft p{
+        font-size: 1rem;
+    }
+    .hleft h1{
+        font-size: 3rem;
+    }
+    .hleft span{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    .navbar button{
+        font-size: 1rem;
+    }
+    .hamelems{
+        height: 50vh;
+        font-size: 1.5rem;
+    }
+    .mainbg{
+        display: none;
+    }
+    .home{
+        height: 100vh;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hright{
+        height: 40vh;
+        width: unset;
+    }
+    .hright img{
+        object-fit: contain;
+        filter: drop-shadow(0px 0px 0px) contrast(0.85);
+    }
+    .hright .hrname{
+        transform: unset;
+        left: unset;
+    }
+    .hleft{
+        width: unset;
+        align-items: center;
+        line-height: 2.5rem;
+    }
+    .about{
+        height: unset;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aleft{
+        display: flex;
+        align-items: center;
+        clip-path: none;
+        border-radius: 10px;
+    }
+    .aright{
+        width: unset;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .aright p{
+        font-size: 1.2rem;
+    }
+    .skills h2{
+        margin-left: 0;
+        text-align: center;
+    }
+    .sskills{
+        flex-direction: column;
+    }
+    .sskills .skillsleft{
+        margin-bottom: 2rem;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+    .sskills .skillsleft .sbar{
+        width: 80%;
+        margin: none;
+    }
+    .sskills .skillsright{
+        border: none;
+        border-radius: 10px;
+    }
+    .pcardscollection{
+        width: unset !important;
+        flex-direction: column;
+    }
+    .projects .pcards{
+        height: 22vh;
+        width: 80vw;
+        margin-bottom: 2rem;
+    }
+    .projects .pcards p {
+        height: 20%;
+        margin: 0;
+        align-items: center;
+    }
 }

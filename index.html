@@ -34,11 +34,30 @@
                     <li>CONTACT</li>
                 </a>
             </ul>
-            <a href="./assets/Satyam mishra - resume.pdf" download><button><i class="fa-regular fa-circle-down"></i> RESUME</button></a>
+            <div class="navbtn">
+                <a href="./assets/Satyam mishra - resume.pdf" download><button><i class="fa-regular fa-circle-down"></i> RESUME</button></a>
+                <i id="hamburger" class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
+    <div class="hamelems">
+        <a href="#">
+            <li>HOME</li>
+        </a>
+        <a href="#about">
+            <li>ABOUT</li>
+        </a>
+        <a href="#skills">
+            <li>SKILLS</li>
+        </a>
+        <a href="#projects">
+            <li>PROJECTS</li>
+        </a>
+        <a href="#contact">
+            <li>CONTACT</li>
+        </a>
+    </div>
     <div class="mainbg">
-        <div class="maincircle"></div>
         <div class="maincircle"></div>
         <div class="maincircle"></div>
     </div>
@@ -47,7 +66,7 @@
             <div class="hleft">
                 <p>Hello, I'm</p>
                 <h1>Satyam Mishra</h1>
-                <h5><span> Frontend Developer</span></h5>
+                <span> Frontend Developer</span>
                 <a href="#contact"><button><i class="fa-solid fa-angle-down"></i> Contact Now</button></a>
                 <div class="hicons">
                     <a href="https://github.com/satyam044" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
@@ -160,13 +179,13 @@
     <div id="contact">
         <div class="contact">
             <h2>Contact Now</h2>
-            <form>
+            <div class="cform">
                 <span>Name</span><input type="text" id="name" placeholder="Your Name" required>
                 <span>Email</span><input type="email" id="email" placeholder="Your Email" required>
                 <span>Message</span><textarea placeholder="Your Message" id="message" cols="30" rows="4"
                     required></textarea>
                 <button onclick="sendMail()">Submit</button>
-            </form>
+            </div>
         </div>
     </div>
     <footer>
