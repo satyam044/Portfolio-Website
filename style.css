@@ -84,16 +84,18 @@ nav {
     color: #000;
 }
 
-.navbtn{
+.navbtn {
     display: flex;
     align-items: center;
 }
-.navbtn #hamburger{
+
+.navbtn #hamburger {
     display: none;
     margin-left: 2rem;
     margin-right: 1rem;
 }
-.hamelems{
+
+.hamelems {
     z-index: 100;
     display: flex;
     position: fixed;
@@ -106,11 +108,13 @@ nav {
     background-color: #202f2f;
     transition: all 0.5s ease-in;
 }
-.hamelems a{
+
+.hamelems a {
     color: #fff;
     text-decoration: none;
 }
-.hamelems li{
+
+.hamelems li {
     list-style: none;
 }
 
@@ -251,9 +255,11 @@ nav {
 }
 
 .hright img {
+    width: 100%;
+    height: 100%;
     position: relative;
     z-index: 10;
-    object-fit: cover;
+    object-fit: contain;
     filter: drop-shadow(2px 4px 6px #202f2f) contrast(0.85);
     border-bottom: 2px solid rgba(0, 0, 0, 0.338);
 }
@@ -288,7 +294,8 @@ nav {
     background-color: #6985844a;
     clip-path: polygon(0 0, 98% 0%, 80% 100%, 0% 100%);
 }
-.aleft img{
+
+.aleft img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -328,7 +335,7 @@ nav {
     padding: 2rem;
     height: 100%;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     background-color: #424950;
 }
@@ -354,18 +361,20 @@ nav {
     gap: 0.3rem;
 }
 
-.skillsbar{
+.skillsbar {
     background-color: #0000001f;
     border-radius: 20px;
 }
-.skillsbar .sbluebar{
+
+.skillsbar .sbluebar {
     background-color: #2196f3;
     border-radius: 20px;
     height: 1rem;
     display: flex;
     align-items: center;
 }
-.skillsbar .sbluebar span{
+
+.skillsbar .sbluebar span {
     margin-left: 0.5rem;
 }
 
@@ -373,36 +382,13 @@ nav {
     font-size: 1.5rem;
 }
 
-.sbar .html {
-    color: #e44f26;
-}
-
-.sbar .css {
-    color: #1572b6;
-}
-
-.sbar .js {
-    color: yellow;
-}
-
-.sbar .bs {
-    color: #6f2cf5;
-}
-
-.sbar .tailwind {
-    width: 2rem;
-}
-
-.sbar .figma {
-    color: #f34e1e;
-}
-
-.sskills .skillsright{
+.sskills .skillsright {
     width: 15rem;
     padding: 1rem;
     background-color: #2f5a59;
     border-left: 2px solid black;
 }
+
 .sskills .skillsright .progress-bar {
     display: flex;
     justify-content: center;
@@ -416,26 +402,29 @@ nav {
         radial-gradient(closest-side, #424950 95%, transparent 80% 100%),
         conic-gradient(#2196f3 75%, rgb(255, 255, 255) 0);
 }
-.sskills .skillsright .progress-bar2{
+
+.sskills .skillsright .progress-bar2 {
     background:
-    radial-gradient(closest-side, #424950 95%, transparent 80% 100%),
-    conic-gradient(#2196f3 80%, rgb(255, 255, 255) 0);
+        radial-gradient(closest-side, #424950 95%, transparent 80% 100%),
+        conic-gradient(#2196f3 80%, rgb(255, 255, 255) 0);
 }
 
 .progress-bar::before {
     content: "75%";
 }
-.progress-bar2::before{
+
+.progress-bar2::before {
     content: "80%";
 }
 
-.skills .skillsright .srightdiv{
+.skills .skillsright .srightdiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.skills .skillsright .srightdiv p{
+
+.skills .skillsright .srightdiv p {
     margin-top: 1rem;
 }
 
@@ -460,11 +449,14 @@ nav {
     margin-bottom: 3rem;
     width: 70%;
     display: flex;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    overflow: auto;
     justify-content: space-around;
 }
 
 .projects .pcards {
-    height: 50vh;
+    height: 30vh;
     width: 20vw;
     background-color: #668180;
     overflow: hidden;
@@ -476,16 +468,18 @@ nav {
     height: 80%;
     overflow: auto;
 }
-.projects .pcards .pbg::-webkit-scrollbar{
+
+.projects .pcards .pbg::-webkit-scrollbar {
     width: 4px;
     background-color: #202f2f;
 }
-.projects .pcards .pbg::-webkit-scrollbar-thumb{
+
+.projects .pcards .pbg::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #668180;
 }
 
-.projects .pcards .pbg img{
+.projects .pcards .pbg img {
     width: 100%;
     object-fit: cover;
     cursor: pointer;
@@ -512,33 +506,37 @@ nav {
     margin-top: 2rem;
 }
 
-.contact .cform{
+.contact .cform {
     display: flex;
     flex-direction: column;
 }
-.contact .cform span{
+
+.contact .cform span {
     margin-top: 1rem;
 }
+
 .contact .cform input,
-.contact .cform textarea{
+.contact .cform textarea {
     border: 2px solid black;
     outline: none;
     padding: 0.5rem;
     border-radius: 4px;
 }
+
 .contact .cform input::placeholder,
-.contact .cform textarea::placeholder{
+.contact .cform textarea::placeholder {
     color: #000000b6;
 }
 
-.contact .cform textarea::-webkit-resizer{
+.contact .cform textarea::-webkit-resizer {
     display: none;
 }
 
-.contact .cform #name{
+.contact .cform #name {
     text-transform: capitalize;
 }
-.contact .cform button{
+
+.contact .cform button {
     padding: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
@@ -560,105 +558,133 @@ footer {
 }
 
 @media screen and (max-width:900px) {
-    .navbar ul{
+    .navbar ul {
         display: none;
     }
-    .navbtn #hamburger{
+
+    .navbtn #hamburger {
         display: block;
     }
-    .hleft p{
+
+    .hleft p {
         font-size: 1rem;
     }
-    .hleft h1{
+
+    .hleft h1 {
         font-size: 3rem;
     }
-    .hleft span{
+
+    .hleft span {
         font-size: 1.5rem;
     }
-}
-@media screen and (max-width:768px){
-    .navbar button{
+
+    .navbar button {
         font-size: 1rem;
     }
-    .hamelems{
+
+    .hamelems {
         height: 50vh;
         font-size: 1.5rem;
     }
-    .mainbg{
+
+    .mainbg {
         display: none;
     }
-    .home{
+
+    .home {
         height: 100vh;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .hright{
+
+    .hright {
         height: 40vh;
         width: unset;
     }
-    .hright img{
+
+    .hright img {
         object-fit: contain;
         filter: drop-shadow(0px 0px 0px) contrast(0.85);
     }
-    .hright .hrname{
+
+    .hright .hrname {
         transform: unset;
         left: unset;
     }
-    .hleft{
+
+    .hleft {
         width: unset;
         align-items: center;
         line-height: 2.5rem;
     }
-    .about{
+
+    .about {
         height: unset;
         margin-top: 0;
         margin-bottom: 3rem;
         flex-direction: column;
         align-items: center;
     }
-    .aleft{
+
+    .aleft {
         display: flex;
         align-items: center;
         clip-path: none;
         border-radius: 10px;
     }
-    .aright{
+
+    .aright {
         width: unset;
         text-align: center;
         padding: 0 2rem;
     }
-    .aright p{
+
+    .aright p {
         font-size: 1.2rem;
     }
-    .skills h2{
+
+    .skills h2 {
         margin-left: 0;
         text-align: center;
     }
-    .sskills{
+
+    .sskills {
         flex-direction: column;
     }
-    .sskills .skillsleft{
+
+    .sskills .skillsleft {
         margin-bottom: 2rem;
         justify-content: center;
         row-gap: 1rem;
     }
-    .sskills .skillsleft .sbar{
+
+    .sskills .skillsleft .sbar {
         width: 80%;
         margin: none;
     }
-    .sskills .skillsright{
+
+    .sskills .skillsright {
+        width: auto;
         border: none;
         border-radius: 10px;
+        display: flex;
+        gap: 2rem;
     }
-    .pcardscollection{
+
+    .skills .skillsright .srightdiv{
+        flex-direction: column-reverse;
+    }
+
+    .pcardscollection {
         width: unset !important;
         flex-direction: column;
     }
-    .projects .pcards{
+
+    .projects .pcards {
         height: 22vh;
         width: 80vw;
-        margin-bottom: 2rem;
     }
+
     .projects .pcards p {
         height: 20%;
         margin: 0;
